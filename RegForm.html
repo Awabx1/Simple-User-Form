@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegForm.css" />
+</head>
+
+<body>
+
+      
+    
+
+    <div class="main-container">
+        <div class="form-container">
+            <form class="form-grid">
+
+                
+
+                <h1 class="form-heading">Registration</h1>
+
+                 
+
+                <div class="legend">
+                    <legend>
+                        Register for the desired form
+                    </legend>
+                </div>
+
+                
+                <div class="form-input-container col-span-old">
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+               </div>
+
+               
+               <script>
+                document.getElementById("legend").style.color=document.getElementsByName("favcolor")
+                </script>
+
+
+                <div class="form-input-container col-span-old" >
+                    <label for="full-name" class="form-input-label">Full Name</label>
+                    <input type="text" name="full-name" class="form-input" placeholder="Enter your name"  />
+                </div>
+
+                <div class="form-input-container col-span-new">
+                    <label for="email" class="form-input-label">Email</label>
+                    <input type="email" name="email" class="form-input" placeholder="Enter your email" required />
+                </div>
+
+                <div class="form-input-container col-span-old">
+                    <label for="formname" class="form-input-label">Form Name</label>
+                    <input type="text" name="forname" class="form-input" placeholder="Form Name" required />
+                </div>                
+
+                <div class="form-input-container">
+                    <label for="number" class="form-input-label col-span-new">Phone Number</label>
+                    <input type="tel" name="number" class="form-input" placeholder="Enter your number"
+                        pattern="[0-9]{4}-[0-9]{7}"  required/>
+                </div>
+
+                <div class="form-input-container ">
+                    <label for="DOB" class="form-input-label">Date of Birth</label>
+                    <input type="date" name="date" class="form-input" placeholder="Enter your Date of Birth"  required/>
+                </div>
+
+                <div class="form-input-container">
+                    <h3 class="form-input-label">Gender</h3>
+                    <div class="form-radio-input-container-wrapper">
+
+                        <div class="form-radio-input-container">
+                            <input type="radio" name="gender" class="form-input form-radio-input" value="Male" />
+                            <label class="form-radio-input-label">Male</label>
+                        </div>
+
+                        <div class="form-radio-input-container ml-8px">
+                            <input type="radio" name="gender" class="form-input form-radio-input" value="Female" />
+                            <label class="form-radio-input-label">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-input-container">
+                    <h3 class="form-input-label">Acedemic Strong Points</h3>
+                    <div class="form-check-input-container-wrapper">
+
+                        <div class="form-check-input-container">
+                            <input type="checkbox" id="coal" name="coal" value="coal">
+                            <label for="coal">Computer Architecture</label><br>
+                        </div>
+
+                        <div class="form-check-input-container">
+                            <input type="checkbox" id="oop" name="oop" value="oop">
+                            <label for="oop">Object Oriented Programming</label><br>
+                        </div>
+
+                        <div class="form-check-input-container">
+                            <input type="checkbox" id="ai" name="ai" value="ai">
+                            <label for="ai">Artificial Intelligence</label><br>
+                        </div>
+
+                        <div class="form-check-input-container">
+                            <input type="checkbox" id="se" name="se" value="se">
+                            <label for="se">Software Engineering</label><br>
+                        </div>
+
+                        <div class="form-check-input-container">
+                            <input type="checkbox" id="web" name="web" value="web">
+                            <label for="web">Web Dev</label><br>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-input-container">
+                    <h3 class="form-input-label">Province</h3>
+                    <div class="form-check-input-container-wrapper">
+                        <label for="prov">Select Province:</label>
+
+                        <select name="prov" id="prov">
+                            <option value="punjab">Punjab</option>
+                            <option value="sindh">Sindh</option>
+                            <option value="balochistan">Balochistan</option>
+                            <option value="KPK">Khyber Pakhtunkhwa</option>
+                        </select>
+
+                    </div>
+                    <br>
+
+
+                    
+                    <div class="image">
+                        <h3 class="form-input-label">Upload your image</h3>
+                        <p class="imagedec">White Background Passoport photo</p>
+                        <input type="file" class="myFile" required>
+                    </div>
+
+                </div>
+
+                <div class="form-input-container">
+                    <label for="cnic" class="form-input-label">CNIC</label>
+                    <input type="tel" name="number" class="form-input" placeholder="Enter your CNIC"
+                        pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}"  required/>
+                </div>
+
+                <div class="form-input-container col-span-new">
+                    <label for="time" class="form-input-label">Enter Time of Birth</label>
+                    <input type="time" name="dobtime" class="form-input" placeholder="Enter your time of birth"
+                    required/>
+                </div>
+
+                <button type="submit" class="form-submit-button col-span-2"  onclick="alert('Are You Sure?')">
+                    Submit
+                </button>
+
+                <button type="reset"  class="reset-button col-span-2">
+                    Reset
+                </button>
+                </div>
+
+                </div>
+
+           
+       
+    </div>
+
+   
+
+    </form>
+    
+</div>
+
+
+</body>
+
+</html>
